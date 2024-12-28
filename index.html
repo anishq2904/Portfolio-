@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #000000; /* Black for text */
+            --secondary-color: #87ceeb; /* Skyblue for highlights */
+            --background-color: rgba(0, 0, 0, 0.8); /* Transparent Black */
+            --text-color: #000000; /* Black for general text */
+            --font-family: 'Times New Roman', serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-weight: bold;
+            background: url(g.jpg) no-repeat center center/cover;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--secondary-color);
+            color: var(--text-color);
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .portfolio-item {
+            background: var(--secondary-color);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: var(--text-color);
+        }
+
+        .portfolio-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .portfolio-item h3 {
+            margin: 1rem;
+            color: var(--primary-color);
+        }
+
+        .portfolio-item p {
+            margin: 0 1rem 1rem;
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+
+        footer {
+            background: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Anishq R Portfolio</h1>
+        <p>"Highly motivated and adaptable professional with a proven ability to deliver results across diverse environments. Teamwork, and continuous learning to drive success in dynamic roles."</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="portfolio">
+            <h2 style="color: var(--primary-color); text-align: center;">Projects</h2>
+            <div class="portfolio">
+                <div class="portfolio-item">
+                    <img src="project.jpg" alt="Project 1">
+                    <h3>Projects</h3>
+                    <p>Mario Jump - Built Using HTML, CSS, JS<br>Sales Dashboard - Built Using Excel</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="download.jpg" alt="Project 2">
+                    <h3>Certificates</h3>
+                    <p>Power BI, Fundamentals of Gen AI, MS Excel, Python 3 Bootcamp</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="skill.jpg" alt="Project 3">
+                    <h3>Skills</h3>
+                    <p>Python Programming, Git and GitHub, Time Management Skills, Multitasking Skills</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/anishq-srijith-nair-4053222a3/">LinkedIn</a> | <a href="https://github.com/anishq2904">GitHub</a></p>
+    </footer>
+
+    <script>
+        // Add simple interactivity if needed
+        console.log("Portfolio loaded successfully!");
+    </script>
+</body>
+</html>
